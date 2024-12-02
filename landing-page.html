@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        header{
+            background-color: #004853;
+            color: #fff;
+            padding: 1rem 2rem;
+            width: 100%;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        main{
+            max-width: 1000px;
+        }
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        .info img{
+            width: 300px;
+            border-radius: 50%;
+        }
+        .btn{
+            padding: 20px;
+            text-decoration: none;
+            background-color: #004853;
+            color: white;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover{
+            opacity: 0.9;
+        }
+        .info div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        section{
+            padding: 2rem;
+        }
+        .about,.skills,.projects,.contact{
+            background-color: white;
+            margin: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .skills div{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .projects .projects-box{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .contact form{
+            display: grid;
+            gap: 20px;
+        }
+        .contact .input-box{
+            display: grid;
+        }
+        .contact form input,
+        textarea{
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .contact form input:focus,
+        textarea:focus{
+            border-color: #004853;
+        }
+        .contact label{
+            font-size: 14px;
+        }
+        footer{
+            background-color: #004853;
+            width: 100%;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        footer ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+        footer ul li a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>GN</h1>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div>
+                <h2>Olá, meu nome é Gustavo Neitzke!</h2>
+                <p>Sou desenvolvedor, tech lead, instrutor e fundador da Neitzke Academy.</p>
+                <a class="btn" href="#contato">Entre em contato</a>
+            </div>
+            <img src="https://yt3.googleusercontent.com/IHHzgtwdDYRHbeL_4TPH1Yui67CJjlZ2DBDxdN0dz4_OsDudQINBBk6W-SdJXLAvU4CeCx43Pkc=s900-c-k-c0x00ffffff-no-rj" alt="Perfil">
+        </section>
+        <section id="sobre" class="about">
+            <h2>Sobre mim</h2>
+            <p>Olá, meu nome é Gustavo, tenho 22 anos e sou apaixonado por tecnologia desde muito cedo. Sempre fui curioso e adorei resolver problemas. Aos 12 anos, comecei a estudar programação por influência familiar, e aos 18 anos iniciei minha jornada profissional em uma multinacional americana. Paralelamente, criei um canal no YouTube, onde ensino programação e já alcancei mais de 40 mil inscritos.</p>
+        </section>
+        <section id="habilidades" class="skills">
+            <h2>Habilidades</h2>
+            <div>
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>Vue.JS</span>
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Docker</span>
+            </div>
+        </section>
+        <section id="projetos" class="projects">
+            <h2>Projetos</h2>
+            <div class="projects-box">
+                <article>
+                    <h3>Projeto 1</h3>
+                    <p>Sistema de gerenciamento de academias.</p>
+                </article>
+                <article>
+                    <h3>Projeto 2</h3>
+                    <p>Sistema para controle de investimentos.</p>
+                </article>
+                <article>
+                    <h3>Projeto 3</h3>
+                    <p>Sistema de envio de SMS.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <form>
+                <div class="input-box">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-box">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" cols="30" rows="10" required></textarea>
+                </div>
+                <input type="submit" class="btn">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gustavo Neitzke. Todos os direitos reservados.</p>
+        <ul>
+            <li>
+                <a href="#">LinkedIn</a>
+            </li>
+            <li>
+                <a href="#">Instagram</a>
+            </li>
+            <li>
+                <a href="#">TikTok</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

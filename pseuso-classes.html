@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        a:first-child:hover{
+            background-color: purple;
+        }
+        a:last-child:hover{
+            background-color: red;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        button:active{
+            background-color: green;
+        }
+        button:disabled{
+            background-color: black;
+            color: white;
+        }
+        input[type="text"]:focus{
+            background-color: blueviolet;
+        }
+        input[type="number"]:focus{
+            background-color: brown;
+        }
+        .box :nth-child(2){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <div class="box">
+        <a href="">Teste</a>
+        <button>Teste</button>
+        <input type="text" placeholder="Teste">
+        <input type="number" placeholder="Teste">
+        <a href="">Teste 2</a>
+    </div>
+</body>
+</html>

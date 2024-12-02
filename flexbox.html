@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-pai{
+            background-color: yellow;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: end;
+            flex-wrap: wrap-reverse;
+        }
+        .div-filha{
+            min-width: 150px;
+            height: 150px;
+            background-color: brown;
+        }
+        .filha2{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="div-pai">
+        <div class="div-filha">1</div>
+        <div class="div-filha filha2">2</div>
+        <div class="div-filha">3</div>
+    </div>
+</body>
+</html>

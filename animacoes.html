@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border-radius: 30px;
+            animation: animacao 2s infinite alternate;
+        }
+        @keyframes animacao {
+            0% {
+                width: 200px;
+                height: 250px;
+                opacity: 0;
+                background-color: yellow;
+                transform: rotate(0deg);
+            }
+            50% {
+                width: 50px;
+                height: 500px;
+                background-color: green;
+            }
+            100% {
+                width: 500px;
+                height: 50px;
+                opacity: 1;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animações</h1>
+    <div></div>
+</body>
+</html>

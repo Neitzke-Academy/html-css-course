@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            color: red;
+        }
+        p::first-line{
+            background-color: green;
+        }
+        p::selection{
+            background-color: yellow;
+            color: blue;
+        }
+        h1::before{
+            content: 'Neitzke Academy - ';
+            color: green;
+        }
+        h1::after{
+            content: '🎉';
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elements</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam odit hic? Veritatis minima voluptates sunt. Odio consequatur, magni error nemo accusamus est blanditiis et voluptates beatae molestias dolorum neque?</p>
+</body>
+</html>

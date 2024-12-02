@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Landing Page Completa</title>
+  <style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* line-height: 1.6; */
+  color: #333;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #004853;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seção Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #004853;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Seções de Conteúdo */
+section {
+  padding: 2rem;
+}
+
+.about, .skills, .projects, .testimonials, .contact {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container, .projects-container, .testimonials-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.testimonials blockquote {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  font-style: italic;
+  border-left: 5px solid #004853;
+  color: #555;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rodapé */
+footer {
+  background-color: #004853;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+input,textarea{
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+input:focus,
+textarea:focus{
+            border-color: #004853;
+        }
+
+        .skill-item{
+            font-weight: 100;
+        }
+        main{
+            max-width: 1000px;
+        }
+
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com a navegação principal -->
+  <header>
+    <nav>
+      <h1>GN</h1>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Olá, meu nome é Gustavo Neitzke!</h2>
+        <p>Sou desenvolvedor, tech lead, instrutor e fundador da Neitzke Academy.</p>
+        <br>
+        <a href="#contato" class="btn">Entre em contato</a>
+      </div>
+      <img src="https://yt3.googleusercontent.com/IHHzgtwdDYRHbeL_4TPH1Yui67CJjlZ2DBDxdN0dz4_OsDudQINBBk6W-SdJXLAvU4CeCx43Pkc=s900-c-k-c0x00ffffff-no-rj" alt="Foto" class="hero-img">
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Sobre Mim</h2>
+      <p>Olá, meu nome é Gustavo, tenho 22 anos e sou apaixonado
+        por tecnologia desde muito cedo. Sempre fui curioso e
+        adorei resolver problemas. Aos 12 anos, comecei a estudar
+        programação por influência familiar, e aos 18 anos iniciei
+        minha jornada profissional em uma multinacional
+        americana. Paralelamente, criei um canal no YouTube,
+        onde ensino programação e já alcancei mais de 40 mil
+        inscritos.</p>
+    </section>
+
+    <section id="habilidades" class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <span>HTML & CSS</span>
+        </div>
+        <div class="skill-item">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <span>Vue.JS</span>
+        </div>
+        <div class="skill-item">
+            <span>PHP</span>
+        </div>
+        <div class="skill-item">
+            <span>Laravel</span>
+        </div>
+        <div class="skill-item">
+            <span>MySQL</span>
+        </div>
+        <div class="skill-item">
+            <span>MongoDB</span>
+        </div>
+        <div class="skill-item">
+            <span>Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects-container">
+        <article class="project-item">
+          <h3>Projeto 1</h3>
+          <p>Sistema de gerenciamento de academias.</p>
+        </article>
+        <article class="project-item">
+          <h3>Projeto 2</h3>
+          <p>Sistema para controle de investimentos</p>
+        </article>
+        <article class="project-item">
+            <h3>Projeto 3</h3>
+            <p>Sistema de envio de SMS</p>
+          </article>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea cols="30" rows="10" id="mensagem" name="mensagem" required></textarea>
+        <br>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Gustavo Neitzke. Todos os direitos reservados.</p>
+    <ul class="social-links">
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">TikTok</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
